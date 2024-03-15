@@ -1,0 +1,112 @@
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+
+  flex: 1;
+
+  padding: 1rem;
+  border-radius: 8px;
+
+  background-color: var(--gray-500);
+  border: 1px solid var(--gray-400);
+}
+
+.item div {
+  display: flex;
+}
+
+.item label {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+
+  padding: 3px;
+}
+
+.item label input[type='checkbox'] {
+  display: none;
+}
+
+.checkbox {
+  width: 1.125rem;
+  height: 1.125rem;
+  border-radius: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  cursor: pointer;
+
+  transition: 0.2s all;
+}
+
+.checkbox-unchecked {
+  border: 2px solid var(--blue);
+}
+
+.checkbox-unchecked:hover {
+  background-color: rgba(30, 111, 159, 0.2);
+}
+
+.checkbox-checked {
+  border: 2px solid var(--purple-dark);
+  background-color: var(--purple-dark);
+}
+
+.checkbox-checked:hover {
+  border: 2px solid var(--purple);
+  background-color: var(--purple);
+}
+
+.paragraph {
+  font-size: 0.875rem;
+  line-height: 140%;
+  user-select: none;
+
+  max-width: 90%;
+
+  margin-left: 3px;
+
+  transition: all 0.2s;
+}
+
+.paragraph-checked {
+  text-decoration: line-through;
+  color: var(--gray-300);
+}
+
+.item button {
+  border: none;
+  border-radius: 4px;
+  background-color: transparent;
+
+  padding: 5px 4px 2px 4px;
+  
+  cursor: pointer;
+
+  transition: background-color 0.2s;
+}
+
+.item button line, .item button path {
+  transition: fill 0.2s;
+}
+
+.item button:hover {
+  background-color: var(--gray-400);
+}
+
+.item button:hover line, .item button:hover path {
+  fill: var(--danger);
+}
+
+@media (max-width: 420px) {
+  .paragraph {
+    max-width: 85%;
+  }
+}
+
+
+
