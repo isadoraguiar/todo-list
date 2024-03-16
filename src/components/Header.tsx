@@ -1,6 +1,6 @@
 import styles from './Header.module.css'
 
-import toDoLogo from '../assets/todo-list.svg'
+import toDoLogo from '../../public/todo-list.svg'
 
 export function Header() {
   return (
